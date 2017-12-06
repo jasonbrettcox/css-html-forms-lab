@@ -34,7 +34,7 @@
 				    	</select>
 					</div>
 					<div class="row formGroup">
-				    	<label for="mission">Misison Statement:</label>
+				    	<label for="mission">Mission Statement:</label>
 				    	<textarea id="mission" name="mission"></textarea>
 					</div>
 
@@ -108,28 +108,86 @@
 			// main.appendChild(results);
 		};
 
+		
+
+
 		$("form").on("submit", function(event){
+			event.preventDefault();
+			makeResults();
+			var name = $('#name').val(); 
+			var mission = $('#mission').val();
+			var sentiment= $('input[name=sentiment]:checked').val();
+			var noun= $('#noun').val();
+			var adjective2= $('input[name=adjective-2]:checked').map(function() {return this.value;}).get().join(", "); 
+			var noun2= $('#noun-2').val(); 
+			var verb = $('#verb-1').val(); 
+			
+
+		// $('.container.results').append(name, mission, noun, noun2);
+			
+
+
+	    	$('.container.results').append('<p> Once upon a time there was a Developer named' + name + '.' + name + 'came to General Asssembly to' +  verb + 'the great mountain of programming knowledge.' + mission +','+ name + 'shouted.</p>');
+ 
+		
+		});
 
 		    // Stop the form from submitting
 
 	    	// Run the 'makeResults' function seen above
 
-	    	/*
+	    	
+
+	  //   
+	  //   var verb = $('#verb-1').val(); {
+			//  $('#verb').html(change the var to what they input, a selector);
+	  //   	$('#verb').append("<p>").append("'name' +  came to General Asssembly to + 'verb' + 'the great mountain of programming knowledge.");
+	  //   }
+	  //      var mission = $('#mission').val(); {
+			//  $('#mission').html(change the var to what they input, in this case text-area);
+	  //   	$('#mission').append("<p>").append("'mission' + 'name' + "shouted.");
+	  //   }
+
+			// var sentiment= $('#sentiment').val(); {
+			//  $('#sentiment').html(change the var to what they input, in this case radioButtons);
+	  //   	$('#sentiment').append("<p>").append(" Though 'sentiment' , + 'name' + "was able to overcome all obstacles with the power of their");
+		   
+		 // }
+
+		 // 	var noun= $('#noun').val(); {
+			//  $('#noun').html(.val?);
+	  //   	$('#noun').append("<p>").append(" 'noun' ");
+		 //   }
+		 //   	var adjective2= $('#adjective-2').val(); {
+			//  $('#adjective2').html(.val?);
+	  //   	$('#adjective2').append("<p>").append(" In the end, their success can be contributed entirely to their +'adjective2' ");
+		 //   }
+
+		 //   var noun2= $('#noun-2').val(); {
+			//  $('#noun2').html(.val?);
+	  //   	$('#noun2').append("<p>").append(" 'noun2' ");
+		   
+
+
+		    // $('#myDiv').html("Goodbye world!");
+		    
+
+		    //   $('#container').append("<p>").append("Hello simple insertion using jQuery chaining");
 			
-				For each value entered into a form input, add the input to the corresponding sentence, then append the text into the results section:
+				// For each value entered into a form input, add the input to the corresponding sentence, then append the text into the results section:
 
-				"Once upon a time there was a Developer named NAME."
+				// "Once upon a time there was a Developer named NAME."
 
-				"NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
+				// "NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
 
-				""MISSION", NAME shouted."
+				// ""MISSION", NAME shouted."
 	
-				"Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN."
+				// "Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN."
 
-				"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
+				// "In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
 
-	    	*/ 
-		});
+	    	 
+		
 	</script>
 
 </body>
