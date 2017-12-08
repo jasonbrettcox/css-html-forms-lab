@@ -4,6 +4,28 @@
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
 }
+body{
+	font-family: 'Proza Libre', sans-serif;
+	border-radius: 3px;
+}
+title{
+font-weight: 800;
+font-size: 32px;
+ margin: 0 auto;
+}
+main{
+	width: 100%;
+	border-radius: 3px;
+
+}
+form{
+	float:left;
+	border-radius: 3px;
+}
+container results{
+	float: left;
+	border-radius: 3px;
+}
 
 /* 
 	Use Google Fonts to make all of the text Proza Libre.
