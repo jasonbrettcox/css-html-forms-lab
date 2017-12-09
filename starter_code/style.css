@@ -7,40 +7,70 @@
 body{
 	font-family: 'Proza Libre', sans-serif;
 	border-radius: 3px;
+	display: flex;
+	margin: 0 AUTO;
+	justify-content: space-around;
+
+	
 }
 title{
 font-weight: 800;
 font-size: 32px;
- margin: 0 auto;
+display: flex;
+margin: 0 AUTO;
+}
+mission{
+	height: 100px;
+
 }
 main{
 	width: 100%;
 	border-radius: 3px;
-
+	display: flex;
+	margin: 0 AUTO;
+	justify-content: space-around;
 }
 form{
+	
 	float:left;
 	border-radius: 3px;
+	display: flex;
+	margin: 0 AUTO; 
+	justify-content: space-around;
+	background-color: #E3E6EC;
+	flex-direction: column;
+	align-items: center;
 }
 container results{
 	float: left;
 	border-radius: 3px;
+	display: flex;
+	margin: 0 AUTO;
+	justify-content: space-around;
+	max-width: 500px;
 }
 
-/* 
-	Use Google Fonts to make all of the text Proza Libre.
 
-	Make the Title twice as large as the body text, bold, and give it some nice margin.
+
+h1{
+	font-size: 24px;
+	font-style: bold;
+	margin: 0 auto;
+}
+/* 
+	xUse Google Fonts to make all of the text Proza Libre.
+
+	xMake the Title twice as large as the body text, bold, and give it some nice margin.
 */
 
 /*-------- Main Styles --------*/
 
 /* 
-	Make the main container the full width of the page.
+	xMake the main container the full width of the page.
 
-	Make the two inner containers (the form and the results) float side by side, on the left side of the screen.
+	XMake the two inner containers (the form and the results) float side by side, on the left side of the screen.
 
-	Every container, form, input, and button should have rounded corners.
+	XEvery container, form, input, and button should have rounded corners.
 */
 
 /*-------- Form Styles --------*/
@@ -50,7 +80,7 @@ container results{
 
 	Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
 	
-	The background should be #E3E6EC, and it should align to the middle of its container.
+	xThe background should be #E3E6EC, and it should align to the middle of its container.
 	
 	Every element should have nice, even padding or margin around it.
 
