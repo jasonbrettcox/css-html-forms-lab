@@ -7,56 +7,77 @@
 body{
 	font-family: 'Proza Libre', sans-serif;
 	border-radius: 3px;
-	display: flex;
+	
 	margin: 0 AUTO;
-	justify-content: space-around;
+	
 
 	
 }
 title{
 font-weight: 800;
 font-size: 32px;
-display: flex;
+
 margin: 0 AUTO;
 }
-mission{
-	height: 100px;
-
-}
-main{
+.main{
 	width: 100%;
 	border-radius: 3px;
-	display: flex;
 	margin: 0 AUTO;
 	justify-content: space-around;
 }
-form{
-	
-	float:left;
-	border-radius: 3px;
+.form{
 	display: flex;
+	border-radius: 3px;
+	padding: 20px;
 	margin: 0 AUTO; 
-	justify-content: space-around;
-	background-color: #E3E6EC;
-	flex-direction: column;
-	align-items: center;
-}
-container results{
 	float: left;
-	border-radius: 3px;
-	display: flex;
-	margin: 0 AUTO;
-	justify-content: space-around;
-	max-width: 500px;
+	background-color: #E3E6EC;
+	text-align: left;
+	width: 350px;
+	flex-direction: column;
 }
-
-
-
+.row {
+	padding: 10px;
+}
+ .results{
+	
+	border-radius: 3px;
+	text   align: center;
+	margin: 0 AUTO;
+	float: left;
+	width: 500px;
+	background-color: #C8DBB3;
+	padding: 20px;
+}
+.button{
+	float:right;
+	font-style: bold;
+	/* background-color: rgb(39, 208, 127, .5); */
+	background-image: url('images/steering-wheel.png');
+ 
+}
+.mission{
+	height: 100px;
+}
+.formGroup{
+	padding:25px;
+	width= 100%;
+	display: inline-block;
+	
+	
+}
 h1{
 	font-size: 24px;
 	font-style: bold;
-	margin: 0 auto;
+	margin: 25px;
 }
+.row{
+	padding: 10px;
+}
+/* #submit{
+	height: 48px;
+	padding: 14px;
+} */
 /* 
 	xUse Google Fonts to make all of the text Proza Libre.
 
@@ -78,25 +99,25 @@ h1{
 
 /* 
 
-	Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
+	xMake sure the form itself fills the width of whatever container its in, but no larger than 500px.
 	
 	xThe background should be #E3E6EC, and it should align to the middle of its container.
 	
-	Every element should have nice, even padding or margin around it.
+	xEvery element should have nice, even padding or margin around it.
 
-	.row elements should be spaced out so they're not touching.
+	x.row elements should be spaced out so they're not touching.
 
-	.formGroup elements should fill the width of their container, and be inline-block.
+	X.formGroup elements should fill the width of their container, and be inline-block.
 
-	The labels inside of .formGroup should be on their own line above form options, fill the width of their container, and have top/bottom padding.
+	xThe labels inside of .formGroup should be on their own line above form options, fill the width of their container, and have top/bottom padding.
 
-	Radio buttons and checkbox options should each be on their own line, and indented a little. 
+	xRadio buttons and checkbox options should each be on their own line, and indented a little. 
 
-	Radio buttons and checkbox labels should be directly to the right of their corresponding inputs, and the text should vertically align with the inputs. 
+	xRadio buttons and checkbox labels should be directly to the right of their corresponding inputs, and the text should vertically align with the inputs. 
 
-	Text inputs, submit buttons, and select boxes should all be at least 48px tall. The should have 14px of padding around their text. 
+	xText inputs, submit buttons, and select boxes should all be at least 48px tall. The should have 14px of padding around their text. 
 
-	Textareas should be at least 100px tall.
+	xTextareas should be at least 100px tall.
 
 	Text inputs, select boxes, and textareas should have a 1px border that's #CCC, and none of the default shadows.
 
@@ -113,9 +134,9 @@ h1{
 
 /* 
 
-	The results container should also fill the width of its container, but only up to 500px.
+	xThe results container should also fill the width of its container, but only up to 500px.
 
-	The results container should have a background color of #C8DBB3, and comfortable padding around the text.
+	xThe results container should have a background color of #C8DBB3, and comfortable padding around the text.
 
 */
 
